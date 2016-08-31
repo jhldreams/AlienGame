@@ -22,7 +22,6 @@ class Ship():
         # 屏幕中央,注意这些值是坐标
         self.rect.center = self.screen_rect.center
 
-        print(self.rect.center)
         # 屏幕底部
         self.rect.bottom = self.screen_rect.bottom
 
