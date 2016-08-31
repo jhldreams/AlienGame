@@ -1,6 +1,5 @@
-import sys
-
 import pygame
+import sys
 
 
 def check_events():
