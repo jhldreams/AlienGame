@@ -15,14 +15,15 @@ def run_game():
 
     # 创建一艘飞船
 
-    ship = Ship(screen)
+    ship = Ship(ai_settings, screen)
 
     # 开始游戏的主循环
 
     while True:
         # 监视键盘和鼠标事件
-        gf.check_events()
+        gf.check_events(ship)
 
+        ship.update_moving()
         # 重绘屏幕,背景色填充
         # 让最近绘制的屏幕可见
         gf.update_screen(ai_settings, screen, ship)
